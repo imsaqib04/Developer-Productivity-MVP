@@ -1,6 +1,7 @@
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
+import os
 
 SECRET_KEY = "dev-only-secret-key"
 DEBUG = True
@@ -71,3 +72,5 @@ REST_FRAMEWORK = {
         "rest_framework.renderers.JSONRenderer",
     ]
 }
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
