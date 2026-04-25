@@ -9,21 +9,21 @@ async function apiGet(path) {
 }
 
 export function getDevelopers() {
-  return apiGet("/developers/");
+  return apiGet("api/developers/");
 }
 
 export function getManagers() {
-  return apiGet("/managers/");
+  return apiGet("api/managers/");
 }
 
 export function getMonths() {
-  return apiGet("/months/");
+  return apiGet("api/months/");
 }
 
 export function getIcInsight(developerId, month) {
-  return apiGet(`/insights/ic/?developer_id=${developerId}&month=${month}`);
+  return apiGet(`api/insights/ic/?developer_id=${developerId}&month=${month}`);
 }
 
 export function getManagerSummary(managerId, month) {
-  return apiGet(`/insights/manager/?manager_id=${managerId}&month=${month}`);
+  return apiGet(`api/insights/manager/?manager_id=${managerId}&month=${month}`);
 }
