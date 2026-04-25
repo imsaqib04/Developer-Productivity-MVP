@@ -1,5 +1,4 @@
-const API_BASE = "https://developer-productivity-mvp-backned.onrender.com";
-
+const API_BASE="https://developer-productivity-mvp-backned.onrender.com";
 async function apiGet(path) {
   const response = await fetch(`${API_BASE}${path}`);
   if (!response.ok) {
